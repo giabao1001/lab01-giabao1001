@@ -3,17 +3,23 @@
 A starter repository for the CSC10014 Smart Virtual Assistant project.
 
 ## Setup
+Prerequisites: Python 3.10+, Git.
 
-TODO (Lab 1): write the exact steps a new teammate needs, from a fresh machine to
-running the app and the tests. Your partner will follow them without your help.
+```bash
+git clone git@github.com:giabao1001/lab01-giabao1001.git
+cd lab01-giabao1001
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+pip install -e .
 
 ## Run
 
-TODO
+python -m assistant "where is the library?"
 
 ## Test
 
-TODO
+pytest -q
 
 ## Project structure
 
