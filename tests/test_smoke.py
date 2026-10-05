@@ -15,3 +15,8 @@ def test_unknown():
 
 def test_empty():
     assert reply("   ") == "Please type a question."
+
+def test_registrar():
+    from assistant.rules import reply
+    response = reply("where is the registrar?")
+    assert "A.105" in response
